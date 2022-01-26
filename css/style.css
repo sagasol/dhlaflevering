@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.wrapper {
+    width: 750px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #F8F8F0;
+   position: relative;
+   z-index: 0;
+
+}
+
+header {
+    background-color: #F5D968;
+    height:240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    
+
+}
+
+.nav {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.nav:first-of-type {
+    margin-top: -100px;
+}
+.nav:last-of-type {
+    margin-top: -100px;
+}
+.mainContent
+{
+    padding: 2rem;
+    width: 100%;
+    z-index: 5;
+
+}
+
+.title
+{
+padding: 2rem;
+width: 100%;
+display: block;
+background-color: #FFCC00;
+border: 1px solid black;
+text-align: center;
+font-size: 35px;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px #707070 solid;
+    justify-content: space-between;
+}
+.From {
+    font-size: 30px;
+
+}
+.Tracking {
+    Font-size: 20px;
+    color: #666666;
+}
+.DaysLeft {
+    Font-size: 20px;
+    color: #f00;
+}
+.seemore {
+    font-size: 25px;
+
+    color: #000;
+    z-index: 5;
+
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.full {
+    position:absolute;
+    top: -7rem;
+    z-index: -1;
+}
+.imgBoks {
+    width: 549px;
+    z-index: 5;
+}
+.Box {
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px #707070 solid;
+    margin-bottom: 2rem;
+    position: relative;
+    
+}
+
+.Box::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #F8F8F0;
+    opacity: 0.53;
+}
+.Box::before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 120%;
+    border-radius: 50%;
+    background-color: #F5D968;
+    z-index: 0;
+    transform: translateY(-4rem);
+    opacity: 0.27;
+    
+
+}
+
+.boks_title {
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.Connect {
+padding-top: 2rem;
+}
+
+.askTom
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: 5;
+}
+
+.Popup {
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+}
